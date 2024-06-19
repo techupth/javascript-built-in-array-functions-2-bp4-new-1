@@ -374,3 +374,13 @@ const bills = [
 ];
 
 // Start coding here
+function totalSum(bills) {
+  return console.log(
+    "Total bill transaction is " +
+      bills.reduce(function (accumulator, bill) {
+        return accumulator + bill.total;
+      }, 0)
+  );
+}
+
+totalSum(bills);
